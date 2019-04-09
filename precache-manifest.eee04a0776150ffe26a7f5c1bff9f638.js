@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/testcafe-cheat-sheet/static/js/2.acfd46dc.chunk.js"
   },
   {
-    "revision": "b2fe4476c98a28ec9b8d98c6cbc57157",
+    "revision": "13bbf702dec514d4f34cc2a9e653397a",
     "url": "/testcafe-cheat-sheet/index.html"
   }
 ];
