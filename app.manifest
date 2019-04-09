@@ -1,7 +1,7 @@
 {
   "name": "TestCafe Cheat Sheet",
   "short_name": "TCCheatSheet",
-  "start_url": "/",
+  "start_url": ".",
   "icons": [
     {
       "src": "android-chrome-192x192.png",
@@ -22,6 +22,10 @@
       "src": "favicon-32x32.png",
       "sizes": "32x32",
       "type": "image/png"
+    },
+    {
+      "src": "favicon.ico",
+      "type": "image/x-icon"
     }
   ],
   "theme_color": "#ffffff",
