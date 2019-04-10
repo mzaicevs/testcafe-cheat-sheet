@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/testcafe-cheat-sheet/precache-manifest.0be221c1bc6a25950cf97f67ee258a89.js"
+  "/testcafe-cheat-sheet/precache-manifest.081dad9260c388e7bc04eb1cfe209a28.js"
 );
 
 workbox.clientsClaim();
