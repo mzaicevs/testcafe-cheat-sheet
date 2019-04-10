@@ -1,15 +1,15 @@
 {
-  "main.css": "/testcafe-cheat-sheet/static/css/main.1b9dbfe4.chunk.css",
-  "main.js": "/testcafe-cheat-sheet/static/js/main.b195a62e.chunk.js",
-  "main.js.map": "/testcafe-cheat-sheet/static/js/main.b195a62e.chunk.js.map",
+  "main.css": "/testcafe-cheat-sheet/static/css/main.ba382a63.chunk.css",
+  "main.js": "/testcafe-cheat-sheet/static/js/main.7bc2ff99.chunk.js",
+  "main.js.map": "/testcafe-cheat-sheet/static/js/main.7bc2ff99.chunk.js.map",
   "runtime~main.js": "/testcafe-cheat-sheet/static/js/runtime~main.25b72145.js",
   "runtime~main.js.map": "/testcafe-cheat-sheet/static/js/runtime~main.25b72145.js.map",
-  "static/css/2.6113102c.chunk.css": "/testcafe-cheat-sheet/static/css/2.6113102c.chunk.css",
-  "static/js/2.acfd46dc.chunk.js": "/testcafe-cheat-sheet/static/js/2.acfd46dc.chunk.js",
-  "static/js/2.acfd46dc.chunk.js.map": "/testcafe-cheat-sheet/static/js/2.acfd46dc.chunk.js.map",
+  "static/css/2.bd2ae5a8.chunk.css": "/testcafe-cheat-sheet/static/css/2.bd2ae5a8.chunk.css",
+  "static/js/2.887a4e22.chunk.js": "/testcafe-cheat-sheet/static/js/2.887a4e22.chunk.js",
+  "static/js/2.887a4e22.chunk.js.map": "/testcafe-cheat-sheet/static/js/2.887a4e22.chunk.js.map",
   "index.html": "/testcafe-cheat-sheet/index.html",
-  "precache-manifest.d975f17600aa1b7c5e8abb877e1b5947.js": "/testcafe-cheat-sheet/precache-manifest.d975f17600aa1b7c5e8abb877e1b5947.js",
+  "precache-manifest.3c55bf260e49e6fe7e5534f39f805737.js": "/testcafe-cheat-sheet/precache-manifest.3c55bf260e49e6fe7e5534f39f805737.js",
   "service-worker.js": "/testcafe-cheat-sheet/service-worker.js",
-  "static/css/2.6113102c.chunk.css.map": "/testcafe-cheat-sheet/static/css/2.6113102c.chunk.css.map",
-  "static/css/main.1b9dbfe4.chunk.css.map": "/testcafe-cheat-sheet/static/css/main.1b9dbfe4.chunk.css.map"
+  "static/css/2.bd2ae5a8.chunk.css.map": "/testcafe-cheat-sheet/static/css/2.bd2ae5a8.chunk.css.map",
+  "static/css/main.ba382a63.chunk.css.map": "/testcafe-cheat-sheet/static/css/main.ba382a63.chunk.css.map"
 }
