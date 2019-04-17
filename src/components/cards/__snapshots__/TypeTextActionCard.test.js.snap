@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ClickActionCard matches snapshot 1`] = `
+<CodeCard
+  cardTitle="Typing Action"
+  codeSnippet={
+    Object {
+      "code": "t.typeText( selector, text [, options] )",
+      "example": "import { Selector } from 'testcafe';
+
+  const nameInput = Selector('#developer-name');
+  
+  fixture \`My fixture\`
+      .page \`http://www.example.com/\`;
+  
+  test('Type and Replace', async t => {
+      await t
+          .typeText(nameInput, 'Tony')
+          .typeText(nameInput, 'Stak', { replace: true })
+          .typeText(nameInput, 'r', { caretPos: 3 })
+          .expect(nameInput.value).eql('Stark');
+  });",
+      "language": "javascript",
+      "options": "{
+    modifiers: {
+        ctrl: Boolean,
+        alt: Boolean,
+        shift: Boolean,
+        meta: Boolean
+    },
+
+    offsetX: Number,
+    offsetY: Number,
+    caretPos: Number,
+    replace: Boolean,
+    paste: Boolean,
+    speed: Number
+}",
+    }
+  }
+  description="Types the specified text into an input element."
+/>
+`;

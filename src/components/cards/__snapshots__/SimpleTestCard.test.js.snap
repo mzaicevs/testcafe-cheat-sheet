@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SimpleTestCard matches snapshot 1`] = `
+<CodeCard
+  cardTitle="Simple Test"
+  codeSnippet={
+    Object {
+      "code": "import { Selector } from 'testcafe';
+    
+    fixture \`Getting Started\`
+      .page \`http://devexpress.github.io/testcafe/example\`;
+                
+    test('My first test', async t => {
+      // Test code
+    });",
+      "language": "javascript",
+    }
+  }
+/>
+`;

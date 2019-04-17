@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardContainer matches snapshot 1`] = `
+<Fragment>
+  <CardColumns>
+    <Loading
+      component={<UNDEFINED />}
+      key="1"
+      spinnerAnimation="grow"
+    />
+    <Loading
+      component={<UNDEFINED />}
+      key="2"
+      spinnerAnimation="grow"
+    />
+    <Loading
+      component={<UNDEFINED />}
+      key="3"
+      spinnerAnimation="grow"
+    />
+    <Loading
+      component={<UNDEFINED />}
+      key="4"
+      spinnerAnimation="grow"
+    />
+    <Loading
+      component={<UNDEFINED />}
+      key="5"
+      spinnerAnimation="grow"
+    />
+    <Loading
+      component={<UNDEFINED />}
+      key="6"
+      spinnerAnimation="grow"
+    />
+    <Loading
+      component={<UNDEFINED />}
+      key="7"
+      spinnerAnimation="grow"
+    />
+    <Loading
+      component={<UNDEFINED />}
+      key="8"
+      spinnerAnimation="grow"
+    />
+    <Loading
+      component={<UNDEFINED />}
+      key="9"
+      spinnerAnimation="grow"
+    />
+    <Loading
+      component={<UNDEFINED />}
+      key="10"
+      spinnerAnimation="grow"
+    />
+  </CardColumns>
+  <Bootstrap(undefined)
+    bg="light"
+    fixed="bottom"
+    variant="light"
+  >
+    <NavbarBrand
+      href="#home"
+    >
+      TestCafe Cheat Sheet
+    </NavbarBrand>
+    <Search
+      handleChange={[Function]}
+    />
+  </Bootstrap(undefined)>
+</Fragment>
+`;

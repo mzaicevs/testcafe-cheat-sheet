@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ClickActionCard matches snapshot 1`] = `
+<CodeCard
+  cardTitle="Click Action"
+  codeSnippet={
+    Object {
+      "code": "t.click( selector [, options] )
+t.doubleClick( selector [, options]
+t.rightClick( selector [, options] ))",
+      "example": "import { Selector } from 'testcafe';
+
+    const avatar = Selector('#avatar');
+    const popupMenu = Selector('#popupMenu');
+    
+    fixture \`My fixture\`
+        .page \`http://www.example.com/\`;
+    
+    test('Click a check box and check its state', async t => {
+        await t
+            .click(avatar)
+            .expect(avatar.selected).ok();
+            .doubleClick(avatar)
+            .expect(avatar.visible).ok();
+            .rightClick(avatar)
+            .expect(popupMenu.exists).notOk();
+    });",
+      "language": "javascript",
+      "options": "{
+      modifiers: {
+          ctrl: Boolean,
+          alt: Boolean,
+          shift: Boolean,
+          meta: Boolean
+      },
+  
+      offsetX: Number,
+      offsetY: Number,
+      destinationOffsetX: Number,
+      destinationOffsetY: Number,
+      speed: Number
+  }",
+    }
+  }
+  description="Click, Double-click, and Right-click a webpage element in a test."
+/>
+`;

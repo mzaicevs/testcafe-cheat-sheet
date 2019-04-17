@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App matches snapshot 1`] = `
+<div
+  className="App"
+>
+  <Header />
+  <ForwardRef
+    defaultActiveKey="cheatsheet"
+    id="uncontrolled-tab-example"
+    style={
+      Object {
+        "marginBottom": "10px",
+      }
+    }
+  >
+    <Tab
+      eventKey="cheatsheet"
+      title="Cheat Sheet"
+    >
+      <Loading
+        component={<UNDEFINED />}
+      />
+    </Tab>
+    <Tab
+      eventKey="about"
+      title="About"
+    >
+      <Loading
+        component={<UNDEFINED />}
+      />
+    </Tab>
+  </ForwardRef>
+</div>
+`;

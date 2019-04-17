@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FixtureCard matches snapshot 1`] = `
+<CodeCard
+  cardTitle="Fixtures"
+  codeSections={
+    Array [
+      Object {
+        "code": "fixture( fixtureName )
+fixture \`fixtureName\`",
+        "description": "TestCafe tests must be organized into categories called fixtures. They accept a String parameter",
+        "language": "javascript",
+      },
+      Object {
+        "code": "fixture.page( url )
+fixture.page \`url\`",
+        "description": "Specify the web page URL as a String parameter where all tests in a fixture start.",
+        "language": "javascript",
+      },
+      Object {
+        "code": "fixture.meta({ key1: 'value1', key2: 'value2', key3: 'value3' })",
+        "description": "Specify additional information for tests in the form of key-value metadata and use it in reports.",
+        "language": "javascript",
+      },
+      Object {
+        "code": "fixture.before( fn(ctx) )
+fixture.after( fn(ctx) )",
+        "description": "Fixture hooks that execute a function before/after each test run",
+        "language": "javascript",
+      },
+      Object {
+        "code": "fixture.beforeEach( fn(t) )
+fixture.afterEach( fn(t) )",
+        "description": "Test hooks that execute a function before/after each test.",
+        "language": "javascript",
+      },
+      Object {
+        "code": "fixture.skip",
+        "description": "Skip a feature from execution.",
+        "language": "javascript",
+      },
+      Object {
+        "code": "fixture.only",
+        "description": "Only execute a specific feature.",
+        "language": "javascript",
+      },
+    ]
+  }
+/>
+`;

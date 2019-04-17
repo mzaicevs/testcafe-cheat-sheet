@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InstallCard matches snapshot 1`] = `
+<CodeCard
+  cardTitle="Install TestCafe"
+  codeSnippet={
+    Object {
+      "code": "npm install -D testcafe",
+      "language": "plaintext",
+    }
+  }
+/>
+`;

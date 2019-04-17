@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InstallCard matches snapshot 1`] = `
+<CodeCard
+  cardTitle="Running a test on multiple browsers"
+  codeSnippet={
+    Object {
+      "code": "testcafe chrome,firefox,edge src/tests/my.e2e.test.js",
+      "language": "plaintext",
+    }
+  }
+/>
+`;

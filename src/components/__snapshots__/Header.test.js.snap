@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header matches snapshot 1`] = `
+<Bootstrap(Jumbotron)>
+  <Container
+    as="div"
+    fluid={false}
+    style={
+      Object {
+        "marginLeft": "12px",
+      }
+    }
+  >
+    <Bootstrap(Row)>
+      <a
+        href="https://devexpress.github.io/testcafe/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <Bootstrap(Image)
+          rounded={true}
+          src="https://devexpress.github.io/testcafe/images/site-header-logo.svg"
+        />
+      </a>
+    </Bootstrap(Row)>
+    <Bootstrap(Row)>
+      <h1>
+        Cheat Sheet
+      </h1>
+    </Bootstrap(Row)>
+    <Bootstrap(Row)>
+      <p>
+        Copy TestCafe commands and code and stuff!
+      </p>
+    </Bootstrap(Row)>
+  </Container>
+</Bootstrap(Jumbotron)>
+`;

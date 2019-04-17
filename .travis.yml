@@ -1,0 +1,18 @@
+language: node_js
+node_js:
+  - "stable"
+cache:
+  directories:
+    - node_modules
+script:
+  - npm run build
+  - npm test --coverage # Include coverage when running tests
+deploy:
+  skip_cleanup: true # required to keep the build artefacts
+  provider: pages
+  github_token: $GITHUB_TOKEN # Set in the settings page of your repository, as a secure variable
+  keep_history: true
+  local_dir: build
+  on:
+    branch: master
+after_script: # Upload coverage reports

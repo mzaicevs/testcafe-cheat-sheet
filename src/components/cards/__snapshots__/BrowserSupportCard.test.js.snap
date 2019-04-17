@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BrowserSupportCard matches snapshot 1`] = `
+<TableCard
+  cardTitle="Browser Support"
+  headers={
+    Array [
+      "Browser",
+      "Alias",
+    ]
+  }
+  rows={
+    Array [
+      Array [
+        "Google Chrome: Stable, Beta, Dev and Canary",
+        Array [
+          <CodeHighlight
+            language="plaintext"
+          >
+            chromium
+          </CodeHighlight>,
+          <CodeHighlight
+            language="plaintext"
+          >
+            chrome
+          </CodeHighlight>,
+          <CodeHighlight
+            language="plaintext"
+          >
+            chrome-canary
+          </CodeHighlight>,
+          <CodeHighlight
+            language="plaintext"
+          >
+            chrome:headless
+          </CodeHighlight>,
+        ],
+      ],
+      Array [
+        "Internet Explorer (11+)",
+        Array [
+          <CodeHighlight
+            language="plaintext"
+          >
+            ie
+          </CodeHighlight>,
+        ],
+      ],
+      Array [
+        "Microsoft Edge",
+        Array [
+          <CodeHighlight
+            language="plaintext"
+          >
+            edge
+          </CodeHighlight>,
+        ],
+      ],
+      Array [
+        "Mozilla Firefox",
+        Array [
+          <CodeHighlight
+            language="plaintext"
+          >
+            firefox
+          </CodeHighlight>,
+          <CodeHighlight
+            language="plaintext"
+          >
+            firefox:headless
+          </CodeHighlight>,
+        ],
+      ],
+      Array [
+        "Safari",
+        Array [
+          <CodeHighlight
+            language="plaintext"
+          >
+            safari
+          </CodeHighlight>,
+        ],
+      ],
+      Array [
+        "Opera",
+        Array [
+          <CodeHighlight
+            language="plaintext"
+          >
+            opera
+          </CodeHighlight>,
+        ],
+      ],
+    ]
+  }
+/>
+`;
