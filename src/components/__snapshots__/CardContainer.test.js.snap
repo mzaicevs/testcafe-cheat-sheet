@@ -59,11 +59,6 @@ exports[`CardContainer matches snapshot 1`] = `
     fixed="bottom"
     variant="light"
   >
-    <NavbarBrand
-      href="#home"
-    >
-      TestCafe Cheat Sheet
-    </NavbarBrand>
     <Search
       handleChange={[Function]}
     />
