@@ -58,7 +58,6 @@ class CardContainer extends React.Component {
               renderSearchComponents(search_mappings)}
         </CardColumns>
         <Navbar bg="light" variant="light" fixed="bottom">
-          <Navbar.Brand href="#home">TestCafe Cheat Sheet</Navbar.Brand>
           <Search handleChange={this.handleChange} />
         </Navbar>
       </>
