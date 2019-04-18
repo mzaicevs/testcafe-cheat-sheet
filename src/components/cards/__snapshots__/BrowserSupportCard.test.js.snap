@@ -2,7 +2,12 @@
 
 exports[`BrowserSupportCard matches snapshot 1`] = `
 <TableCard
-  cardTitle="Browser Support"
+  cardTitle={
+    <CardLink
+      href="https://devexpress.github.io/testcafe/documentation/using-testcafe/common-concepts/browsers/browser-support.html"
+      text="Browser Support"
+    />
+  }
   headers={
     Array [
       "Browser",

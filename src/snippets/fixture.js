@@ -40,7 +40,9 @@ const snippet = {
       code: "fixture.only",
       language: `javascript`
     }
-  ]
+  ],
+  fullDocLink:
+    "https://devexpress.github.io/testcafe/documentation/test-api/test-code-structure.html#fixtures"
 };
 
 export default snippet;

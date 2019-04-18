@@ -2,7 +2,12 @@
 
 exports[`ClickActionCard matches snapshot 1`] = `
 <CodeCard
-  cardTitle="Typing Action"
+  cardTitle={
+    <CardLink
+      href="https://devexpress.github.io/testcafe/documentation/test-api/actions/type-text.html"
+      text="Typing Action"
+    />
+  }
   codeSnippet={
     Object {
       "code": "t.typeText( selector, text [, options] )",

@@ -35,7 +35,8 @@ const snippet = {
       destinationOffsetX: Number,
       destinationOffsetY: Number,
       speed: Number
-  }`
+  }`,
+  fullDocLink: 'https://devexpress.github.io/testcafe/documentation/test-api/actions/click.html'
 };
 
 export default snippet;

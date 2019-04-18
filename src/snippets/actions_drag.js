@@ -33,7 +33,8 @@ const snippet = {
       destinationOffsetX: Number,
       destinationOffsetY: Number,
       speed: Number
-  }`
+  }`,
+  fullDocLink: 'https://devexpress.github.io/testcafe/documentation/test-api/actions/drag-element.html'
 };
 
 export default snippet;

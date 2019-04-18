@@ -2,7 +2,12 @@
 
 exports[`ClickActionCard matches snapshot 1`] = `
 <CodeCard
-  cardTitle="Drag Action"
+  cardTitle={
+    <CardLink
+      href="https://devexpress.github.io/testcafe/documentation/test-api/actions/drag-element.html"
+      text="Drag Action"
+    />
+  }
   codeSnippet={
     Object {
       "code": "t.drag( selector, dragOffsetX, dragOffsetY [, options] )

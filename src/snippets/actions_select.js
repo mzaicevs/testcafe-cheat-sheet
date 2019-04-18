@@ -76,7 +76,9 @@ const snippet = {
       });`,
       options: `{ speed: Number }`
     }
-  ]
+  ],
+  fullDocLink:
+    "https://devexpress.github.io/testcafe/documentation/test-api/actions/select-text.html"
 };
 
 export default snippet;

@@ -31,7 +31,9 @@ const snippet = {
     replace: Boolean,
     paste: Boolean,
     speed: Number
-}`
+}`,
+  fullDocLink:
+    "https://devexpress.github.io/testcafe/documentation/test-api/actions/type-text.html"
 };
 
 export default snippet;

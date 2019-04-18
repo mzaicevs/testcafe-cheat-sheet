@@ -2,7 +2,12 @@
 
 exports[`ClickActionCard matches snapshot 1`] = `
 <CodeCard
-  cardTitle="Hover Action"
+  cardTitle={
+    <CardLink
+      href="https://devexpress.github.io/testcafe/documentation/test-api/actions/hover.html"
+      text="Hover Action"
+    />
+  }
   codeSnippet={
     Object {
       "code": "t.hover( selector [, options] )",

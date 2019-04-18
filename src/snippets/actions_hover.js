@@ -29,7 +29,9 @@ const snippet = {
       destinationOffsetX: Number,
       destinationOffsetY: Number,
       speed: Number
-  }`
+  }`,
+  fullDocLink:
+    "https://devexpress.github.io/testcafe/documentation/test-api/actions/hover.html"
 };
 
 export default snippet;

@@ -10,6 +10,8 @@ const browserSupport = {
     { text: "Mozilla Firefox", aliases: ["firefox", "firefox:headless"] },
     { text: "Safari", aliases: ["safari"] },
     { text: "Opera", aliases: ["opera"] }
-  ]
+  ],
+  fullDocLink:
+    "https://devexpress.github.io/testcafe/documentation/using-testcafe/common-concepts/browsers/browser-support.html"
 };
 export default browserSupport;
