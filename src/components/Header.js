@@ -20,7 +20,7 @@ const Header = () => (
         <h1>Cheat Sheet</h1>
       </Row>
       <Row>
-        <p>Copy TestCafe commands and code and stuff!</p>
+        <p>Copy TestCafe commands and code...and stuff!</p>
       </Row>
     </Container>
   </Jumbotron>
