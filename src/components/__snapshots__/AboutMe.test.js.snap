@@ -391,29 +391,29 @@ exports[`AboutMe matches snapshot 1`] = `
                                               </a>
                                             </CardLink>
                                           </CardLink>
-                                           - for all my copying needs
+                                           - for all copying needs
                                         </li>
                                         <li>
                                           <CardLink
-                                            href="https://highlightjs.org/"
-                                            text="highlight.js"
+                                            href="https://github.com/conorhastings/react-syntax-highlighter"
+                                            text="react-syntax-highlighter.js"
                                           >
                                             <CardLink
-                                              href="https://highlightjs.org/"
+                                              href="https://github.com/conorhastings/react-syntax-highlighter"
                                               rel="noopener noreferrer"
                                               target="_blank"
                                             >
                                               <a
                                                 className="card-link"
-                                                href="https://highlightjs.org/"
+                                                href="https://github.com/conorhastings/react-syntax-highlighter"
                                                 rel="noopener noreferrer"
                                                 target="_blank"
                                               >
-                                                highlight.js
+                                                react-syntax-highlighter.js
                                               </a>
                                             </CardLink>
                                           </CardLink>
-                                           - code syntax highlighter
+                                           - the code highlighter
                                         </li>
                                       </ul>
                                       <CardSubtitle>
@@ -509,6 +509,28 @@ exports[`AboutMe matches snapshot 1`] = `
                                       <ul>
                                         <li>
                                           <CardLink
+                                            href="https://jestjs.io/"
+                                            text="Jest"
+                                          >
+                                            <CardLink
+                                              href="https://jestjs.io/"
+                                              rel="noopener noreferrer"
+                                              target="_blank"
+                                            >
+                                              <a
+                                                className="card-link"
+                                                href="https://jestjs.io/"
+                                                rel="noopener noreferrer"
+                                                target="_blank"
+                                              >
+                                                Jest
+                                              </a>
+                                            </CardLink>
+                                          </CardLink>
+                                           - delightful JavaScript testing
+                                        </li>
+                                        <li>
+                                          <CardLink
                                             href="https://airbnb.io/enzyme/"
                                             text="Enzyme"
                                           >
@@ -527,6 +549,7 @@ exports[`AboutMe matches snapshot 1`] = `
                                               </a>
                                             </CardLink>
                                           </CardLink>
+                                           - making it easy to test component output
                                         </li>
                                       </ul>
                                     </div>

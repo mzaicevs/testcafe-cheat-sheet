@@ -102,11 +102,14 @@ const WhatWasItMadeWithCardContent = () => (
           href="https://github.com/nkbt/react-copy-to-clipboard"
           text="react-copy-to-cliboard"
         />
-        {` - for all my copying needs`}
+        {` - for all copying needs`}
       </li>
       <li>
-        <CardLink href="https://highlightjs.org/" text="highlight.js" />
-        {` - code syntax highlighter`}
+        <CardLink
+          href="https://github.com/conorhastings/react-syntax-highlighter"
+          text="react-syntax-highlighter.js"
+        />
+        {` - the code highlighter`}
       </li>
     </ul>
 
@@ -129,7 +132,12 @@ const WhatWasItMadeWithCardContent = () => (
     <Card.Subtitle>Test</Card.Subtitle>
     <ul>
       <li>
+        <CardLink href="https://jestjs.io/" text="Jest" />
+        {` - delightful JavaScript testing`}
+      </li>
+      <li>
         <CardLink href="https://airbnb.io/enzyme/" text="Enzyme" />
+        {` - making it easy to test component output`}
       </li>
     </ul>
   </Card.Body>
