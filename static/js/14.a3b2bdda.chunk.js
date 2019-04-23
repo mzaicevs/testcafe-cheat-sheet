@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[14],{293:function(e,t,n){"use strict";n.r(t);var c=n(0),a=n.n(c),o=n(77),i=n(90),r=n(76);t.default=function(){return a.a.createElement(i.a,{cardTitle:a.a.createElement(r.a,{text:o.g.title,href:o.g.fullDocLink}),codeSections:o.g.codeSections})}}}]);
+//# sourceMappingURL=14.a3b2bdda.chunk.js.map
