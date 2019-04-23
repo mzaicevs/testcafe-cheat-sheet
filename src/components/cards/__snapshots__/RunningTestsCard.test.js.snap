@@ -5,7 +5,9 @@ exports[`InstallCard matches snapshot 1`] = `
   cardTitle="Running a test on multiple browsers"
   codeSnippet={
     Object {
-      "code": "testcafe chrome,firefox,edge src/tests/my.e2e.test.js",
+      "code": Array [
+        "testcafe chrome,firefox,edge src/tests/my.e2e.test.js",
+      ],
       "language": "plaintext",
     }
   }

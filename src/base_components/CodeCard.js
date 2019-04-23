@@ -7,7 +7,7 @@ import {
   ToggleButton
 } from "react-bootstrap";
 import { CopyToClipboard } from "react-copy-to-clipboard";
-import CodeHighlight from "./CodeSyntaxHighlight";
+import { CodeHighlight, MultiCodeHighlight } from "./CodeHighlight";
 
 const CodeCard = ({
   cardTitle,
@@ -22,14 +22,7 @@ const CodeCard = ({
       <Card.Header>{cardTitle}</Card.Header>
       <Card.Body>
         {description ? <Card.Text>{description}</Card.Text> : null}
-        <CodeHighlight style={{ display: "inline-table" }} language={language}>
-          {code}
-        </CodeHighlight>
-        {document.queryCommandSupported("copy") && (
-          <CopyToClipboard text={code} onCopy={() => {}}>
-            <Button variant="info">Copy</Button>
-          </CopyToClipboard>
-        )}
+        <MultiCodeHighlight code={code} language={language} />
       </Card.Body>
       {options ? (
         <Card.Body>
@@ -54,12 +47,7 @@ const CodeCard = ({
           </ButtonToolbar>
           {isShowingOptions ? (
             <>
-              <CodeHighlight
-                style={{ display: "inline-table" }}
-                language={language}
-              >
-                {options}
-              </CodeHighlight>
+              <CodeHighlight language={language}>{options}</CodeHighlight>
               {document.queryCommandSupported("copy") && (
                 <CopyToClipboard text={code} onCopy={() => {}}>
                   <Button variant="info">Copy</Button>
@@ -93,12 +81,7 @@ const CodeCard = ({
           </ButtonToolbar>
           {isShowingExample ? (
             <>
-              <CodeHighlight
-                style={{ display: "inline-table" }}
-                language={language}
-              >
-                {example}
-              </CodeHighlight>
+              <CodeHighlight language={language}>{example}</CodeHighlight>
               {document.queryCommandSupported("copy") && (
                 <CopyToClipboard text={code} onCopy={() => {}}>
                   <Button variant="info">Copy</Button>

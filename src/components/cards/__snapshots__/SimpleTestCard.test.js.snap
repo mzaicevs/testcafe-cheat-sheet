@@ -5,7 +5,8 @@ exports[`SimpleTestCard matches snapshot 1`] = `
   cardTitle="Simple Test"
   codeSnippet={
     Object {
-      "code": "import { Selector } from 'testcafe';
+      "code": Array [
+        "import { Selector } from 'testcafe';
     
     fixture \`Getting Started\`
       .page \`http://devexpress.github.io/testcafe/example\`;
@@ -13,6 +14,7 @@ exports[`SimpleTestCard matches snapshot 1`] = `
     test('My first test', async t => {
       // Test code
     });",
+      ],
       "language": "javascript",
     }
   }

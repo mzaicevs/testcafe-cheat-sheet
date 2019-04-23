@@ -11,7 +11,9 @@ exports[`FixtureCard matches snapshot 1`] = `
   codeSections={
     Array [
       Object {
-        "code": "t.selectText( selector [, startPos] [, endPos] [, options] )",
+        "code": Array [
+          "t.selectText( selector [, startPos] [, endPos] [, options] )",
+        ],
         "description": "Selects text in input elements of various types",
         "example": "import { ClientFunction, Selector } from 'testcafe';
 
@@ -36,7 +38,9 @@ exports[`FixtureCard matches snapshot 1`] = `
         "options": "{ speed: Number }",
       },
       Object {
-        "code": "t.selectTextAreaContent( selector [, startLine] [, startPos] [, endLine] [, endPos] [, options] )",
+        "code": Array [
+          "t.selectTextAreaContent( selector [, startLine] [, startPos] [, endLine] [, endPos] [, options] )",
+        ],
         "description": "Select text within a <textarea> element",
         "example": "import { ClientFunction, Selector } from 'testcafe';
 
@@ -67,7 +71,9 @@ exports[`FixtureCard matches snapshot 1`] = `
         "options": "{ speed: Number }",
       },
       Object {
-        "code": "t.selectEditableContent( startSelector, endSelector [, options] )",
+        "code": Array [
+          "t.selectEditableContent( startSelector, endSelector [, options] )",
+        ],
         "description": "Select HTML elements that have the contentEditable attribute enabled.",
         "example": "import { Selector } from 'testcafe';
 

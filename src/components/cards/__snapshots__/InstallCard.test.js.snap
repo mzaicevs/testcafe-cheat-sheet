@@ -5,7 +5,9 @@ exports[`InstallCard matches snapshot 1`] = `
   cardTitle="Install TestCafe"
   codeSnippet={
     Object {
-      "code": "npm install -D testcafe",
+      "code": Array [
+        "npm install -D testcafe",
+      ],
       "language": "plaintext",
     }
   }

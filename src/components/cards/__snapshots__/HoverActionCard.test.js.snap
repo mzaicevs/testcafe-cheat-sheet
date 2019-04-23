@@ -10,7 +10,9 @@ exports[`ClickActionCard matches snapshot 1`] = `
   }
   codeSnippet={
     Object {
-      "code": "t.hover( selector [, options] )",
+      "code": Array [
+        "t.hover( selector [, options] )",
+      ],
       "example": "import { Selector } from 'testcafe';
 
   const comboBox = Selector('.combo-box');

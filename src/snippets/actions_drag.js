@@ -1,8 +1,10 @@
 const snippet = {
   title: "Drag Action",
   description: "Drag a webpage element in a test.",
-  code:
-    "t.drag( selector, dragOffsetX, dragOffsetY [, options] )\nt.dragToElement( selector, destinationSelector [, options] )",
+  code: [
+    "t.drag( selector, dragOffsetX, dragOffsetY [, options] )",
+    "t.dragToElement( selector, destinationSelector [, options] )"
+  ],
   language: `javascript`,
   example: `import { Selector } from 'testcafe';
 
@@ -34,7 +36,8 @@ const snippet = {
       destinationOffsetY: Number,
       speed: Number
   }`,
-  fullDocLink: 'https://devexpress.github.io/testcafe/documentation/test-api/actions/drag-element.html'
+  fullDocLink:
+    "https://devexpress.github.io/testcafe/documentation/test-api/actions/drag-element.html"
 };
 
 export default snippet;

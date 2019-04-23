@@ -10,9 +10,11 @@ exports[`ClickActionCard matches snapshot 1`] = `
   }
   codeSnippet={
     Object {
-      "code": "t.click( selector [, options] )
-t.doubleClick( selector [, options]
-t.rightClick( selector [, options] ))",
+      "code": Array [
+        "t.click( selector [, options] )",
+        "t.doubleClick( selector [, options]",
+        "t.rightClick( selector [, options] ))",
+      ],
       "example": "import { Selector } from 'testcafe';
 
     const avatar = Selector('#avatar');

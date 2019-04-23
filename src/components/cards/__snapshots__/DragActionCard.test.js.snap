@@ -10,8 +10,10 @@ exports[`ClickActionCard matches snapshot 1`] = `
   }
   codeSnippet={
     Object {
-      "code": "t.drag( selector, dragOffsetX, dragOffsetY [, options] )
-t.dragToElement( selector, destinationSelector [, options] )",
+      "code": Array [
+        "t.drag( selector, dragOffsetX, dragOffsetY [, options] )",
+        "t.dragToElement( selector, destinationSelector [, options] )",
+      ],
       "example": "import { Selector } from 'testcafe';
 
   const slider = Selector('#developer-rating');

@@ -1,7 +1,7 @@
 const snippet = {
   title: "Hover Action",
   description: "Hovers the mouse pointer over a webpage element.",
-  code: "t.hover( selector [, options] )",
+  code: ["t.hover( selector [, options] )"],
   language: `javascript`,
   example: `import { Selector } from 'testcafe';
 

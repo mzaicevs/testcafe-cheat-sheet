@@ -2,8 +2,11 @@ const snippet = {
   title: "Click Action",
   description:
     "Click, Double-click, and Right-click a webpage element in a test.",
-  code:
-    "t.click( selector [, options] )\nt.doubleClick( selector [, options]\nt.rightClick( selector [, options] ))",
+  code: [
+    "t.click( selector [, options] )",
+    "t.doubleClick( selector [, options]",
+    "t.rightClick( selector [, options] ))"
+  ],
   language: `javascript`,
   example: `import { Selector } from 'testcafe';
 
@@ -36,7 +39,8 @@ const snippet = {
       destinationOffsetY: Number,
       speed: Number
   }`,
-  fullDocLink: 'https://devexpress.github.io/testcafe/documentation/test-api/actions/click.html'
+  fullDocLink:
+    "https://devexpress.github.io/testcafe/documentation/test-api/actions/click.html"
 };
 
 export default snippet;

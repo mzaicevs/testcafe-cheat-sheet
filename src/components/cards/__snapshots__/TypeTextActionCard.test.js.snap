@@ -10,7 +10,9 @@ exports[`ClickActionCard matches snapshot 1`] = `
   }
   codeSnippet={
     Object {
-      "code": "t.typeText( selector, text [, options] )",
+      "code": Array [
+        "t.typeText( selector, text [, options] )",
+      ],
       "example": "import { Selector } from 'testcafe';
 
   const nameInput = Selector('#developer-name');

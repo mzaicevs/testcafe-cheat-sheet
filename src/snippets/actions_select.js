@@ -3,7 +3,7 @@ const snippet = {
   codeSections: [
     {
       description: "Selects text in input elements of various types",
-      code: "t.selectText( selector [, startPos] [, endPos] [, options] )",
+      code: ["t.selectText( selector [, startPos] [, endPos] [, options] )"],
       language: `javascript`,
       example: `import { ClientFunction, Selector } from 'testcafe';
 
@@ -28,8 +28,9 @@ const snippet = {
     },
     {
       description: "Select text within a <textarea> element",
-      code:
-        "t.selectTextAreaContent( selector [, startLine] [, startPos] [, endLine] [, endPos] [, options] )",
+      code: [
+        "t.selectTextAreaContent( selector [, startLine] [, startPos] [, endLine] [, endPos] [, options] )"
+      ],
       language: `javascript`,
       example: `import { ClientFunction, Selector } from 'testcafe';
 
@@ -60,7 +61,9 @@ const snippet = {
     {
       description:
         "Select HTML elements that have the contentEditable attribute enabled.",
-      code: "t.selectEditableContent( startSelector, endSelector [, options] )",
+      code: [
+        "t.selectEditableContent( startSelector, endSelector [, options] )"
+      ],
       language: `javascript`,
       example: `import { Selector } from 'testcafe';
 
