@@ -1,7 +1,7 @@
 import React from "react";
 import TableCard from "../../base_components/TableCard";
 import CardLink from "../../base_components/CardLink";
-import { CodeHighlight } from "../../base_components/CodeHighlight";
+import CodeHighlight from "../../base_components/CodeSyntaxHighlight";
 import { browserSupport } from "../../snippets";
 
 const BrowserSupportCard = () => (

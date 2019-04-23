@@ -7,7 +7,7 @@ import {
   ToggleButton
 } from "react-bootstrap";
 import { CopyToClipboard } from "react-copy-to-clipboard";
-import { CodeHighlight } from "./CodeHighlight";
+import CodeHighlight from "./CodeSyntaxHighlight";
 
 const CodeCard = ({
   cardTitle,
