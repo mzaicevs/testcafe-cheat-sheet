@@ -29,6 +29,9 @@ const LazyTypePressKeyActionCard = React.lazy(() =>
 const LazyTypeNavigateActionCard = React.lazy(() =>
   import("../cards/NavigateActionCard")
 );
+const LazyTypeResizeWindowActionCard = React.lazy(() =>
+  import("../cards/ResizeWindowActionCard")
+);
 
 const mappings = [
   {
@@ -147,6 +150,16 @@ const mappings = [
       <Loading
         key={12}
         component={<LazyTypeNavigateActionCard />}
+        spinnerAnimation="grow"
+      />
+    )
+  },
+  {
+    keywords: ["resize", "window", "action"],
+    getComponent: () => (
+      <Loading
+        key={13}
+        component={<LazyTypeResizeWindowActionCard />}
         spinnerAnimation="grow"
       />
     )
