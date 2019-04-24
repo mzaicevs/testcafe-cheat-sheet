@@ -23,15 +23,16 @@ const LazySelectActionCard = React.lazy(() =>
 const LazyTypeTextActionCard = React.lazy(() =>
   import("../cards/TypeTextActionCard")
 );
-const LazyTypePressKeyActionCard = React.lazy(() =>
+const LazyPressKeyActionCard = React.lazy(() =>
   import("../cards/PressKeyActionCard")
 );
-const LazyTypeNavigateActionCard = React.lazy(() =>
+const LazyNavigateActionCard = React.lazy(() =>
   import("../cards/NavigateActionCard")
 );
-const LazyTypeResizeWindowActionCard = React.lazy(() =>
+const LazyResizeWindowActionCard = React.lazy(() =>
   import("../cards/ResizeWindowActionCard")
 );
+const LazyDebugCard = React.lazy(() => import("../cards/DebugCard"));
 
 const mappings = [
   {
@@ -139,7 +140,7 @@ const mappings = [
     getComponent: () => (
       <Loading
         key={11}
-        component={<LazyTypePressKeyActionCard />}
+        component={<LazyPressKeyActionCard />}
         spinnerAnimation="grow"
       />
     )
@@ -149,7 +150,7 @@ const mappings = [
     getComponent: () => (
       <Loading
         key={12}
-        component={<LazyTypeNavigateActionCard />}
+        component={<LazyNavigateActionCard />}
         spinnerAnimation="grow"
       />
     )
@@ -159,9 +160,15 @@ const mappings = [
     getComponent: () => (
       <Loading
         key={13}
-        component={<LazyTypeResizeWindowActionCard />}
+        component={<LazyResizeWindowActionCard />}
         spinnerAnimation="grow"
       />
+    )
+  },
+  {
+    keywords: ["debug"],
+    getComponent: () => (
+      <Loading key={14} component={<LazyDebugCard />} spinnerAnimation="grow" />
     )
   }
 ];
