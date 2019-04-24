@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DeepEqualAssertCard matches snapshot 1`] = `
+<CodeCard
+  cardTitle="Deep Equal - Assert"
+  codeSnippet={
+    Object {
+      "code": Array [
+        "t.expect( actual ).eql( expected, message, options );",
+      ],
+      "example": "import { Selector } from 'testcafe';
+
+  fixture \`My fixture\`;
+  
+  test('My test', async t => {
+      await t
+        .expect(Selector('.className').count).eql(3)
+        .expect({ a: 'bar' }).eql({ a: 'bar' }, 'this assertion will pass')
+        .expect({ a: 'bar' }).eql({ a: 'foo' }, 'this assertion will fail');
+  });",
+      "language": "javascript",
+      "options": "{ 
+    timeout: Number,
+      allowUnawaitedPromise: Boolean 
+  }",
+    }
+  }
+  description="Asserts that actual is equal to expected."
+  fullDocLink="https://devexpress.github.io/testcafe/documentation/test-api/assertions/assertion-api.html#deep-equal"
+/>
+`;

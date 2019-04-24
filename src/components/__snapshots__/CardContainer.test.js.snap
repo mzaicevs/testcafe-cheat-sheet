@@ -73,6 +73,16 @@ exports[`CardContainer matches snapshot 1`] = `
       key="14"
       spinnerAnimation="grow"
     />
+    <Loading
+      component={<UNDEFINED />}
+      key="15"
+      spinnerAnimation="grow"
+    />
+    <Loading
+      component={<UNDEFINED />}
+      key="16"
+      spinnerAnimation="grow"
+    />
   </CardColumns>
   <Bootstrap(undefined)
     bg="light"

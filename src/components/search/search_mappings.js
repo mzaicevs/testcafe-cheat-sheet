@@ -33,6 +33,12 @@ const LazyResizeWindowActionCard = React.lazy(() =>
   import("../cards/ResizeWindowActionCard")
 );
 const LazyDebugCard = React.lazy(() => import("../cards/DebugCard"));
+const LazyDeepEqualAssertCard = React.lazy(() =>
+  import("../cards/DeepEqualAssertCard")
+);
+const LazyNotDeepEqualAssertCard = React.lazy(() =>
+  import("../cards/NotDeepEqualAssertCard")
+);
 
 const mappings = [
   {
@@ -169,6 +175,26 @@ const mappings = [
     keywords: ["debug"],
     getComponent: () => (
       <Loading key={14} component={<LazyDebugCard />} spinnerAnimation="grow" />
+    )
+  },
+  {
+    keywords: ["assert", "deep", "equal"],
+    getComponent: () => (
+      <Loading
+        key={15}
+        component={<LazyDeepEqualAssertCard />}
+        spinnerAnimation="grow"
+      />
+    )
+  },
+  {
+    keywords: ["assert", "not", "deep", "equal"],
+    getComponent: () => (
+      <Loading
+        key={16}
+        component={<LazyNotDeepEqualAssertCard />}
+        spinnerAnimation="grow"
+      />
     )
   }
 ];
