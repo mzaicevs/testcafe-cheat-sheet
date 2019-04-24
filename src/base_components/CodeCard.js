@@ -48,14 +48,7 @@ const CodeCard = ({
             </ToggleButtonGroup>
           </ButtonToolbar>
           {isShowingOptions ? (
-            <>
-              <CodeHighlight language={language}>{options}</CodeHighlight>
-              {document.queryCommandSupported("copy") && (
-                <CopyToClipboard text={code} onCopy={() => {}}>
-                  <Button variant="info">Copy</Button>
-                </CopyToClipboard>
-              )}
-            </>
+            <CodeHighlight language={language}>{options}</CodeHighlight>
           ) : null}
         </Card.Body>
       ) : null}
@@ -82,14 +75,7 @@ const CodeCard = ({
             </ToggleButtonGroup>
           </ButtonToolbar>
           {isShowingExample ? (
-            <>
-              <CodeHighlight language={language}>{example}</CodeHighlight>
-              {document.queryCommandSupported("copy") && (
-                <CopyToClipboard text={code} onCopy={() => {}}>
-                  <Button variant="info">Copy</Button>
-                </CopyToClipboard>
-              )}
-            </>
+            <CodeHighlight language={language}>{example}</CodeHighlight>
           ) : null}
         </Card.Body>
       ) : null}
