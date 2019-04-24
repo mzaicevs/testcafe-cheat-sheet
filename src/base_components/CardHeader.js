@@ -7,6 +7,7 @@ const CardHeader = ({ docLink, title }) => (
     <div
       style={{
         display: "flex",
+        flexWrap: "wrap",
         justifyContent: "space-between",
         alignItems: "center"
       }}

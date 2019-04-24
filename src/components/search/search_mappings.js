@@ -23,13 +23,16 @@ const LazySelectActionCard = React.lazy(() =>
 const LazyTypeTextActionCard = React.lazy(() =>
   import("../cards/TypeTextActionCard")
 );
+const LazyTypePressKeyActionCard = React.lazy(() =>
+  import("../cards/PressKeyActionCard")
+);
 
 const mappings = [
   {
     keywords: ["install"],
     getComponent: () => (
       <Loading
-        key="1"
+        key={1}
         component={<LazyInstallCard />}
         spinnerAnimation="grow"
       />
@@ -39,7 +42,7 @@ const mappings = [
     keywords: ["running", "test"],
     getComponent: () => (
       <Loading
-        key="2"
+        key={2}
         component={<LazyRunningTestsCard />}
         spinnerAnimation="grow"
       />
@@ -49,7 +52,7 @@ const mappings = [
     keywords: ["example", "test", "simple"],
     getComponent: () => (
       <Loading
-        key="3"
+        key={3}
         component={<LazySimpleTestCard />}
         spinnerAnimation="grow"
       />
@@ -59,7 +62,7 @@ const mappings = [
     keywords: ["browser support"],
     getComponent: () => (
       <Loading
-        key="4"
+        key={4}
         component={<LazyBrowserSupportCard />}
         spinnerAnimation="grow"
       />
@@ -69,7 +72,7 @@ const mappings = [
     keywords: ["fixture"],
     getComponent: () => (
       <Loading
-        key="5"
+        key={5}
         component={<LazyFixtureCard />}
         spinnerAnimation="grow"
       />
@@ -79,7 +82,7 @@ const mappings = [
     keywords: ["click", " double click", " right click", "action"],
     getComponent: () => (
       <Loading
-        key="6"
+        key={6}
         component={<LazyClickActionCard />}
         spinnerAnimation="grow"
       />
@@ -89,7 +92,7 @@ const mappings = [
     keywords: ["drag", "action"],
     getComponent: () => (
       <Loading
-        key="7"
+        key={7}
         component={<LazyDragActionCard />}
         spinnerAnimation="grow"
       />
@@ -99,7 +102,7 @@ const mappings = [
     keywords: ["hover", "action"],
     getComponent: () => (
       <Loading
-        key="8"
+        key={8}
         component={<LazyHoverActionCard />}
         spinnerAnimation="grow"
       />
@@ -109,7 +112,7 @@ const mappings = [
     keywords: ["select", "action"],
     getComponent: () => (
       <Loading
-        key="9"
+        key={9}
         component={<LazySelectActionCard />}
         spinnerAnimation="grow"
       />
@@ -119,8 +122,18 @@ const mappings = [
     keywords: ["type", "typing", "text", "action"],
     getComponent: () => (
       <Loading
-        key="10"
+        key={10}
         component={<LazyTypeTextActionCard />}
+        spinnerAnimation="grow"
+      />
+    )
+  },
+  {
+    keywords: ["press", "key", "action"],
+    getComponent: () => (
+      <Loading
+        key={11}
+        component={<LazyTypePressKeyActionCard />}
         spinnerAnimation="grow"
       />
     )

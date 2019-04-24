@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PressKeyActionCard matches snapshot 1`] = `
+<CodeCard
+  cardTitle="Press Key Action"
+  codeSnippet={
+    Object {
+      "code": Array [
+        "t.pressKey( keys [, options] )",
+      ],
+      "example": "import { Selector } from 'testcafe';
+
+  const nameInput = Selector('#developer-name');
+  
+  fixture \`My fixture\`
+      .page \`http://www.example.com/\`;
+  
+  test('Key Presses', async t => {
+      await t
+          .typeText(nameInput, 'Tony Stark')
+          .pressKey('home right . delete delete delete')
+          .expect(nameInput.value).eql('T. Stark');
+  });",
+      "language": "javascript",
+      "options": "{
+    speed: Number
+}",
+    }
+  }
+  description="Presses the specified keyboard keys."
+  fullDocLink="https://devexpress.github.io/testcafe/documentation/test-api/actions/press-key.html"
+/>
+`;
