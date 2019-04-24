@@ -12,3 +12,21 @@ export { default as actions_navigate } from "./actions_navigate";
 export { default as actions_resizeWindow } from "./actions_resizeWindow";
 export { default as fixture } from "./fixture";
 export { default as debug } from "./debug";
+export { default as assert_within } from "./assert_within";
+export { default as assert_notWithin } from "./assert_notWithin";
+export { default as assert_ok } from "./assert_ok";
+export { default as assert_notOk } from "./assert_notOk";
+export { default as assert_typeOf } from "./assert_typeOf";
+export { default as assert_notTypeOf } from "./assert_notTypeOf";
+export { default as assert_deepEqual } from "./assert_deepEqual";
+export { default as assert_notDeepEqual } from "./assert_notDeepEqual";
+export { default as assert_match } from "./assert_match";
+export { default as assert_notMatch } from "./assert_notMatch";
+export { default as assert_contains } from "./assert_contains";
+export { default as assert_notContains } from "./assert_notContains";
+export { default as assert_lessThan } from "./assert_lessThan";
+export { default as assert_lessThanEqualTo } from "./assert_lessThanEqualTo";
+export { default as assert_greaterThan } from "./assert_greaterThan";
+export {
+  default as assert_greaterThanEqualTo
+} from "./assert_greaterThanEqualTo";
