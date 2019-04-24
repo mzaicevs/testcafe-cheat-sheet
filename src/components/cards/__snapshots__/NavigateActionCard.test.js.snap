@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavigateActionCard matches snapshot 1`] = `
+<CodeCard
+  cardTitle="Navigation Action"
+  codeSnippet={
+    Object {
+      "code": Array [
+        "t.navigateTo( url )",
+      ],
+      "example": "fixture \`My fixture\`
+  .page \`http://www.example.com/\`;
+
+test('Navigate to the main page', async t => {
+  await t
+      .click('#submit-button')
+      .navigateTo('http://devexpress.github.io/testcafe');
+});
+test('Navigate to local pages', async t => {
+  await t
+      .navigateTo('file:///user/my-website/index.html')
+      .navigateTo('../my-project/index.html');
+});",
+      "language": "javascript",
+    }
+  }
+  description="Navigates to the specified URL."
+  fullDocLink="https://devexpress.github.io/testcafe/documentation/test-api/actions/navigate.html"
+/>
+`;

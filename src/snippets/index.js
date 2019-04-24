@@ -8,4 +8,5 @@ export { default as actions_hover } from "./actions_hover";
 export { default as actions_select } from "./actions_select";
 export { default as actions_typeText } from "./actions_typeText";
 export { default as actions_pressKey } from "./actions_pressKey";
+export { default as actions_navigate } from "./actions_navigate";
 export { default as fixture } from "./fixture";
