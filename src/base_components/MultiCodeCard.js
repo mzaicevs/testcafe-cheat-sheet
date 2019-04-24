@@ -9,14 +9,15 @@ import {
 } from "react-bootstrap";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import { CodeHighlight, MultiCodeHighlight } from "./CodeHighlight";
+import CardHeader from "../base_components/CardHeader";
 
-const CodeCard = ({ cardTitle, codeSections }) => {
+const CodeCard = ({ cardTitle, fullDocLink, codeSections }) => {
   const [isShowingOptions, setIsShowingOptions] = useState(false);
   const [isShowingExample, setIsShowingExample] = useState(false);
 
   return (
     <Card>
-      <Card.Header>{cardTitle}</Card.Header>
+      <CardHeader title={cardTitle} docLink={fullDocLink} />
       {codeSections.map(({ description, language, code, options, example }) => (
         <ListGroup key={description}>
           <ListGroup.Item>

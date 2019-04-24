@@ -2,12 +2,7 @@
 
 exports[`FixtureCard matches snapshot 1`] = `
 <CodeCard
-  cardTitle={
-    <CardLink
-      href="https://devexpress.github.io/testcafe/documentation/test-api/test-code-structure.html#fixtures"
-      text="Fixtures"
-    />
-  }
+  cardTitle="Fixtures"
   codeSections={
     Array [
       Object {
@@ -65,5 +60,6 @@ exports[`FixtureCard matches snapshot 1`] = `
       },
     ]
   }
+  fullDocLink="https://devexpress.github.io/testcafe/documentation/test-api/test-code-structure.html#fixtures"
 />
 `;

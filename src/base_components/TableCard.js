@@ -1,10 +1,11 @@
 import React from "react";
 import { Card, Table } from "react-bootstrap";
+import CardHeader from "../base_components/CardHeader";
 
-const TableCard = ({ cardTitle, headers, rows }) => {
+const TableCard = ({ cardTitle, fullDocLink, headers, rows }) => {
   return (
     <Card style={{ overflow: "auto" }}>
-      <Card.Header>{cardTitle}</Card.Header>
+      <CardHeader title={cardTitle} docLink={fullDocLink} />
       <Card.Body>
         <Table>
           <thead>

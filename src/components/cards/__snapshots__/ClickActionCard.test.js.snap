@@ -2,12 +2,7 @@
 
 exports[`ClickActionCard matches snapshot 1`] = `
 <CodeCard
-  cardTitle={
-    <CardLink
-      href="https://devexpress.github.io/testcafe/documentation/test-api/actions/click.html"
-      text="Click Action"
-    />
-  }
+  cardTitle="Click Action"
   codeSnippet={
     Object {
       "code": Array [
@@ -50,5 +45,6 @@ exports[`ClickActionCard matches snapshot 1`] = `
     }
   }
   description="Click, Double-click, and Right-click a webpage element in a test."
+  fullDocLink="https://devexpress.github.io/testcafe/documentation/test-api/actions/click.html"
 />
 `;

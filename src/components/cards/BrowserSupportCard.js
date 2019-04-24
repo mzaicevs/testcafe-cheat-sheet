@@ -1,14 +1,12 @@
 import React from "react";
 import TableCard from "../../base_components/TableCard";
-import CardLink from "../../base_components/CardLink";
 import { CodeHighlight } from "../../base_components/CodeHighlight";
 import { browserSupport } from "../../snippets";
 
 const BrowserSupportCard = () => (
   <TableCard
-    cardTitle={
-      <CardLink href={browserSupport.fullDocLink} text={browserSupport.title} />
-    }
+    cardTitle={browserSupport.title}
+    fullDocLink={browserSupport.fullDocLink}
     headers={["Browser", "Alias"]}
     rows={browserSupport.browsers.map(browser => [
       browser.text,

@@ -8,9 +8,11 @@ import {
 } from "react-bootstrap";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import { CodeHighlight, MultiCodeHighlight } from "./CodeHighlight";
+import CardHeader from "../base_components/CardHeader";
 
 const CodeCard = ({
   cardTitle,
+  fullDocLink,
   codeSnippet: { code, language, options, example },
   description
 }) => {
@@ -19,7 +21,7 @@ const CodeCard = ({
 
   return (
     <Card>
-      <Card.Header>{cardTitle}</Card.Header>
+      <CardHeader title={cardTitle} docLink={fullDocLink} />
       <Card.Body>
         {description ? <Card.Text>{description}</Card.Text> : null}
         <MultiCodeHighlight code={code} language={language} />

@@ -2,12 +2,7 @@
 
 exports[`ClickActionCard matches snapshot 1`] = `
 <CodeCard
-  cardTitle={
-    <CardLink
-      href="https://devexpress.github.io/testcafe/documentation/test-api/actions/hover.html"
-      text="Hover Action"
-    />
-  }
+  cardTitle="Hover Action"
   codeSnippet={
     Object {
       "code": Array [
@@ -44,5 +39,6 @@ exports[`ClickActionCard matches snapshot 1`] = `
     }
   }
   description="Hovers the mouse pointer over a webpage element."
+  fullDocLink="https://devexpress.github.io/testcafe/documentation/test-api/actions/hover.html"
 />
 `;

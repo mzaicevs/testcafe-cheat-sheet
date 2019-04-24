@@ -2,12 +2,7 @@
 
 exports[`FixtureCard matches snapshot 1`] = `
 <CodeCard
-  cardTitle={
-    <CardLink
-      href="https://devexpress.github.io/testcafe/documentation/test-api/actions/select-text.html"
-      text="Select Action"
-    />
-  }
+  cardTitle="Select Action"
   codeSections={
     Array [
       Object {
@@ -92,5 +87,6 @@ exports[`FixtureCard matches snapshot 1`] = `
       },
     ]
   }
+  fullDocLink="https://devexpress.github.io/testcafe/documentation/test-api/actions/select-text.html"
 />
 `;
