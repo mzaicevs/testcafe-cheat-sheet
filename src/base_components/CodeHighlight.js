@@ -23,7 +23,12 @@ const CodeHighlight = ({ children, language }) => (
 const MultiCodeHighlight = ({ code, language }) => (
   <>
     {code.map(codeItem => (
-      <CodeHighlight language={language}>{codeItem}</CodeHighlight>
+      <CodeHighlight
+        key={`${language}-${codeItem.substring(0, 24)}`}
+        language={language}
+      >
+        {codeItem}
+      </CodeHighlight>
     ))}
   </>
 );
