@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import {
   Card,
-  Button,
   ButtonToolbar,
   ToggleButtonGroup,
   ToggleButton
 } from "react-bootstrap";
-import { CopyToClipboard } from "react-copy-to-clipboard";
+
 import { CodeHighlight, MultiCodeHighlight } from "./CodeHighlight";
 import CardHeader from "../base_components/CardHeader";
 
