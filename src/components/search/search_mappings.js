@@ -45,6 +45,10 @@ const LazyContainsAssertCard = React.lazy(() =>
 const LazyNotContainsAssertCard = React.lazy(() =>
   import("../cards/NotContainsAssertCard")
 );
+const LazyOkAssertCard = React.lazy(() => import("../cards/OkAssertCard"));
+const LazyNotOkAssertCard = React.lazy(() =>
+  import("../cards/NotOkAssertCard")
+);
 
 const mappings = [
   {
@@ -219,6 +223,26 @@ const mappings = [
       <Loading
         key={18}
         component={<LazyNotContainsAssertCard />}
+        spinnerAnimation="grow"
+      />
+    )
+  },
+  {
+    keywords: ["assert", "ok"],
+    getComponent: () => (
+      <Loading
+        key={19}
+        component={<LazyOkAssertCard />}
+        spinnerAnimation="grow"
+      />
+    )
+  },
+  {
+    keywords: ["assert", "not", "ok"],
+    getComponent: () => (
+      <Loading
+        key={20}
+        component={<LazyNotOkAssertCard />}
         spinnerAnimation="grow"
       />
     )
