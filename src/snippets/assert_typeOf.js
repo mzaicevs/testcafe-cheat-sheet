@@ -1,3 +1,4 @@
+/* eslint-disable no-useless-escape */
 const snippet = {
   title: "Type Of - Assert",
   description: "Asserts that the actual type is typeName.",

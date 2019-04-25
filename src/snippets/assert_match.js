@@ -1,3 +1,4 @@
+/* eslint-disable no-useless-escape */
 const snippet = {
   title: "Match - Assert",
   description: "Asserts that actual matches the 're' regular expression.",
