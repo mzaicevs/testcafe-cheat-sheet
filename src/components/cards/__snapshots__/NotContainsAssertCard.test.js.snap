@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NotContainsAssertCard matches snapshot 1`] = `
+<CodeCard
+  cardTitle="Not Contains - Assert"
+  codeSnippet={
+    Object {
+      "code": Array [
+        "t.expect( actual ).notContains( unexpected, message, options );",
+      ],
+      "example": "import { ClientFunction } from 'testcafe';
+
+  fixture \`My fixture\`;
+  
+  test('My test', async t => {
+    const getLocation = ClientFunction(() => document.location.href.toString());
+
+    await t
+        .expect(getLocation()).notContains('google.com')
+        .expect('foo bar').notContains('baz', 'string does not contain a substring')
+        .expect([1, 2, 3]).notContains(4, 'array does not contain a value')
+        .expect({ foo: 'bar', hello: 'universe' }).notContains({ buzz: 'abc' }, 'object does not contain a property');
+  });",
+      "language": "javascript",
+      "options": "{ 
+    timeout: Number,
+      allowUnawaitedPromise: Boolean 
+  }",
+    }
+  }
+  description="Asserts that actual does not contain expected."
+  fullDocLink="https://devexpress.github.io/testcafe/documentation/test-api/assertions/assertion-api.html#not-contains"
+/>
+`;

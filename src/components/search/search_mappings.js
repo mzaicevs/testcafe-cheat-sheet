@@ -39,6 +39,12 @@ const LazyDeepEqualAssertCard = React.lazy(() =>
 const LazyNotDeepEqualAssertCard = React.lazy(() =>
   import("../cards/NotDeepEqualAssertCard")
 );
+const LazyContainsAssertCard = React.lazy(() =>
+  import("../cards/ContainsAssertCard")
+);
+const LazyNotContainsAssertCard = React.lazy(() =>
+  import("../cards/NotContainsAssertCard")
+);
 
 const mappings = [
   {
@@ -193,6 +199,26 @@ const mappings = [
       <Loading
         key={16}
         component={<LazyNotDeepEqualAssertCard />}
+        spinnerAnimation="grow"
+      />
+    )
+  },
+  {
+    keywords: ["assert", "contains"],
+    getComponent: () => (
+      <Loading
+        key={17}
+        component={<LazyContainsAssertCard />}
+        spinnerAnimation="grow"
+      />
+    )
+  },
+  {
+    keywords: ["assert", "not", "contains"],
+    getComponent: () => (
+      <Loading
+        key={18}
+        component={<LazyNotContainsAssertCard />}
         spinnerAnimation="grow"
       />
     )
