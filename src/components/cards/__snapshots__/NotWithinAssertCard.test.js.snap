@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NotWithinAssertCard matches snapshot 1`] = `
+<CodeCard
+  cardTitle="Not Within - Assert"
+  codeSnippet={
+    Object {
+      "code": Array [
+        "t.expect( actual ).notWithin( start, finish, message, options );",
+      ],
+      "example": "import { Selector } from 'testcafe';
+
+  fixture \`My fixture\`;
+  
+  test('My test', async t => {
+      await t
+        .expect(Selector('#element').scrollTop).notWithin(100, 200)
+        .expect(1).notWithin(3, 10, 'this assertion will pass');
+  });",
+      "language": "javascript",
+      "options": "{ 
+    timeout: Number,
+      allowUnawaitedPromise: Boolean 
+  }",
+    }
+  }
+  description="Asserts that actual is not within a range from start to finish. Bounds are inclusive."
+  fullDocLink="https://devexpress.github.io/testcafe/documentation/test-api/assertions/assertion-api.html#not-within"
+/>
+`;

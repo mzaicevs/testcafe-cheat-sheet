@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GreaterThanEqualToAssertCard matches snapshot 1`] = `
+<CodeCard
+  cardTitle="Greater Than or Equal To - Assert"
+  codeSnippet={
+    Object {
+      "code": Array [
+        "t.expect( actual ).gte( expected, message, options );",
+      ],
+      "example": "import { Selector } from 'testcafe';
+
+  fixture \`My fixture\`;
+  
+  test('My test', async t => {
+      await t
+        .expect(Selector('#element').clientWidth).gte(50)
+        .expect(5).gte(2, '5 is greater or equal than 2')
+        .expect(2).gte(2, '2 is greater or equal than 2 ');
+  });",
+      "language": "javascript",
+      "options": "{ 
+    timeout: Number,
+      allowUnawaitedPromise: Boolean 
+  }",
+    }
+  }
+  description="Asserts that actual is greater than or equal to expected."
+  fullDocLink="https://devexpress.github.io/testcafe/documentation/test-api/assertions/assertion-api.html#greater-than-or-equal-to"
+/>
+`;

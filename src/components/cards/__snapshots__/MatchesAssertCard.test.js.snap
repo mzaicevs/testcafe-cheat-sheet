@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MatchesAssertCard matches snapshot 1`] = `
+<CodeCard
+  cardTitle="Match - Assert"
+  codeSnippet={
+    Object {
+      "code": Array [
+        "t.expect( actual ).match( re, message, options );",
+      ],
+      "example": "import { ClientFunction } from 'testcafe';
+
+  fixture \`My fixture\`;
+  
+  test('My test', async t => {
+      const getLocation = ClientFunction(() => document.location.href.toString());
+      
+      await t
+        .expect(getLocation()).match(/.com/)
+        .expect('foobar').match(/^f/, 'this assertion will be passed');
+  });",
+      "language": "javascript",
+      "options": "{ 
+    timeout: Number,
+      allowUnawaitedPromise: Boolean 
+  }",
+    }
+  }
+  description="Asserts that actual matches the 're' regular expression."
+  fullDocLink="https://devexpress.github.io/testcafe/documentation/test-api/assertions/assertion-api.html#match"
+/>
+`;

@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LessThanAssertCard matches snapshot 1`] = `
+<CodeCard
+  cardTitle="Less Than - Assert"
+  codeSnippet={
+    Object {
+      "code": Array [
+        "t.expect( actual ).lt( expected, message, options );",
+      ],
+      "example": "import { Selector } from 'testcafe';
+
+  fixture \`My fixture\`;
+  
+  test('My test', async t => {
+      await t
+        .expect(Selector('#element').offsetHeight).lt(25)
+        .expect(2).lt(5, '2 is less than 5');
+  });",
+      "language": "javascript",
+      "options": "{ 
+    timeout: Number,
+      allowUnawaitedPromise: Boolean 
+  }",
+    }
+  }
+  description="Asserts that actual is less than expected."
+  fullDocLink="https://devexpress.github.io/testcafe/documentation/test-api/assertions/assertion-api.html#less-than"
+/>
+`;

@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NotMatchesAssertCard matches snapshot 1`] = `
+<CodeCard
+  cardTitle="Not Match - Assert"
+  codeSnippet={
+    Object {
+      "code": Array [
+        "t.expect( actual ).notMatch( re, message, options );",
+      ],
+      "example": "import { ClientFunction } from 'testcafe';
+
+  fixture \`My fixture\`;
+  
+  test('My test', async t => {
+      const getLocation = ClientFunction(() => document.location.href.toString());
+      
+      await t
+        .expect(getLocation()).notMatch(/.ie/)
+        .expect('foobar').notMatch(/^b/, 'this assertion will be passed');
+  });",
+      "language": "javascript",
+      "options": "{ 
+    timeout: Number,
+      allowUnawaitedPromise: Boolean 
+  }",
+    }
+  }
+  description="Asserts that actual does not matches the 're' regular expression."
+  fullDocLink="https://devexpress.github.io/testcafe/documentation/test-api/assertions/assertion-api.html#not-match"
+/>
+`;

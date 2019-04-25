@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NotTypeOfAssertCard matches snapshot 1`] = `
+<CodeCard
+  cardTitle="Not Type Of - Assert"
+  codeSnippet={
+    Object {
+      "code": Array [
+        "t.expect( actual ).notTypeOf( typeName, message, options );",
+      ],
+      "example": "import { Selector } from 'testcafe';
+
+  fixture \`My fixture\`;
+  
+  test('My test', async t => {
+   
+    await t
+        .expect(Selector('#element').getAttribute('attr')).notTypeOf('null')
+        .expect('bar').notTypeOf('number', 'string is not a number');
+  });",
+      "language": "javascript",
+      "options": "{ 
+    timeout: Number,
+      allowUnawaitedPromise: Boolean 
+  }",
+    }
+  }
+  description="Asserts that the actual type is not typeName."
+  fullDocLink="https://devexpress.github.io/testcafe/documentation/test-api/assertions/assertion-api.html#not-type-of"
+/>
+`;

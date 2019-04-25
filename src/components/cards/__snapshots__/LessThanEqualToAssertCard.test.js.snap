@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LessThanEqualToAssertCard matches snapshot 1`] = `
+<CodeCard
+  cardTitle="Less Than or Equal To - Assert"
+  codeSnippet={
+    Object {
+      "code": Array [
+        "t.expect( actual ).lte( expected, message, options );",
+      ],
+      "example": "import { Selector } from 'testcafe';
+
+  fixture \`My fixture\`;
+  
+  test('My test', async t => {
+      await t
+        .expect(Selector('#element').offsetHeight).lte(400)
+        .expect(2).lte(5, '2 is less or equal than 5')
+        .expect(2).lte(2, '2 is less or equal than 2 ');
+  });",
+      "language": "javascript",
+      "options": "{ 
+    timeout: Number,
+      allowUnawaitedPromise: Boolean 
+  }",
+    }
+  }
+  description="Asserts that actual is less than or equal to expected."
+  fullDocLink="https://devexpress.github.io/testcafe/documentation/test-api/assertions/assertion-api.html#less-than-or-equal-to"
+/>
+`;
