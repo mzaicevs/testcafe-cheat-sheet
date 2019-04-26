@@ -2,7 +2,7 @@
 
 exports[`PressKeyActionCard matches snapshot 1`] = `
 <CodeCard
-  cardTitle="Press Key Action"
+  cardTitle="Press Key - Action"
   codeSnippet={
     Object {
       "code": Array [

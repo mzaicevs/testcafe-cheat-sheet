@@ -1,5 +1,5 @@
 const snippet = {
-  title: "Typing Action",
+  title: "Typing - Action",
   description: "Types the specified text into an input element.",
   code: ["t.typeText( selector, text [, options] )"],
   language: `javascript`,

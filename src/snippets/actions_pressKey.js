@@ -1,5 +1,5 @@
 const snippet = {
-  title: "Press Key Action",
+  title: "Press Key - Action",
   description: "Presses the specified keyboard keys.",
   code: ["t.pressKey( keys [, options] )"],
   language: `javascript`,

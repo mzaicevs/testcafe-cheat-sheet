@@ -1,5 +1,5 @@
 const snippet = {
-  title: "Resize Window Action",
+  title: "Resize Window - Action",
   description:
     "Resize the window to a specific pixel dimension, or to fit on the screen of the specified mobile device, or just to maximise",
   code: [

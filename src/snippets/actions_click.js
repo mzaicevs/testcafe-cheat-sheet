@@ -1,5 +1,5 @@
 const snippet = {
-  title: "Click Action",
+  title: "Click - Action",
   description:
     "Click, Double-click, and Right-click a webpage element in a test.",
   code: [

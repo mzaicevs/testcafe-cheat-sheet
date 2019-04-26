@@ -1,5 +1,5 @@
 const snippet = {
-  title: "Navigation Action",
+  title: "Navigation - Action",
   description: "Navigates to the specified URL.",
   code: ["t.navigateTo( url )"],
   language: `javascript`,

@@ -1,5 +1,5 @@
 const snippet = {
-  title: "Drag Action",
+  title: "Drag - Action",
   description: "Drag a webpage element in a test.",
   code: [
     "t.drag( selector, dragOffsetX, dragOffsetY [, options] )",

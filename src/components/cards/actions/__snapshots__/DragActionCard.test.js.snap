@@ -2,7 +2,7 @@
 
 exports[`ClickActionCard matches snapshot 1`] = `
 <CodeCard
-  cardTitle="Drag Action"
+  cardTitle="Drag - Action"
   codeSnippet={
     Object {
       "code": Array [

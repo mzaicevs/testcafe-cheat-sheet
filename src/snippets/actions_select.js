@@ -1,5 +1,5 @@
 const snippet = {
-  title: "Select Action",
+  title: "Select - Action",
   codeSections: [
     {
       description: "Selects text in input elements of various types",
