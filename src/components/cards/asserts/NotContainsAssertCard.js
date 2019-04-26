@@ -1,6 +1,6 @@
 import React from "react";
-import { assert_notContains } from "../../snippets";
-import CodeCard from "../../base_components/CodeCard";
+import { assert_notContains } from "../../../snippets";
+import CodeCard from "../../../base_components/CodeCard";
 
 const NotContainsAssertCard = () => (
   <CodeCard

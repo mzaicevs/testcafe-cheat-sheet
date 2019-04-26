@@ -1,6 +1,6 @@
 import React from "react";
-import { assert_greaterThan } from "../../snippets";
-import CodeCard from "../../base_components/CodeCard";
+import { assert_greaterThan } from "../../../snippets";
+import CodeCard from "../../../base_components/CodeCard";
 
 const GreaterThanAssertCard = () => (
   <CodeCard

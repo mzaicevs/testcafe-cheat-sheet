@@ -1,6 +1,6 @@
 import React from "react";
-import { actions_typeText } from "../../snippets";
-import CodeCard from "../../base_components/CodeCard";
+import { actions_typeText } from "../../../snippets";
+import CodeCard from "../../../base_components/CodeCard";
 
 const TypeTextActionCard = () => (
   <CodeCard

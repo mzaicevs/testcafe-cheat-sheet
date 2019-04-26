@@ -1,6 +1,6 @@
 import React from "react";
-import { actions_drag } from "../../snippets";
-import CodeCard from "../../base_components/CodeCard";
+import { actions_drag } from "../../../snippets";
+import CodeCard from "../../../base_components/CodeCard";
 
 const DragActionCard = () => (
   <CodeCard

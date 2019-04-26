@@ -1,6 +1,6 @@
 import React from "react";
-import { actions_click } from "../../snippets";
-import CodeCard from "../../base_components/CodeCard";
+import { actions_click } from "../../../snippets";
+import CodeCard from "../../../base_components/CodeCard";
 
 const ClickActionCard = () => (
   <CodeCard

@@ -1,6 +1,6 @@
 import React from "react";
-import { actions_hover } from "../../snippets";
-import CodeCard from "../../base_components/CodeCard";
+import { actions_hover } from "../../../snippets";
+import CodeCard from "../../../base_components/CodeCard";
 
 const HoverActionCard = () => (
   <CodeCard

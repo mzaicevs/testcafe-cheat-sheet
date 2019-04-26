@@ -1,6 +1,6 @@
 import React from "react";
-import { assert_notMatch } from "../../snippets";
-import CodeCard from "../../base_components/CodeCard";
+import { assert_notMatch } from "../../../snippets";
+import CodeCard from "../../../base_components/CodeCard";
 
 const NotMatchesAssertCard = () => (
   <CodeCard

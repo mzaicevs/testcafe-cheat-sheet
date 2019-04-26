@@ -1,6 +1,6 @@
 import React from "react";
-import { assert_notDeepEqual } from "../../snippets";
-import CodeCard from "../../base_components/CodeCard";
+import { assert_notDeepEqual } from "../../../snippets";
+import CodeCard from "../../../base_components/CodeCard";
 
 const NotDeepEqualAssertCard = () => (
   <CodeCard

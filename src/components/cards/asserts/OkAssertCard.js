@@ -1,6 +1,6 @@
 import React from "react";
-import { assert_ok } from "../../snippets";
-import CodeCard from "../../base_components/CodeCard";
+import { assert_ok } from "../../../snippets";
+import CodeCard from "../../../base_components/CodeCard";
 
 const OkAssertCard = () => (
   <CodeCard

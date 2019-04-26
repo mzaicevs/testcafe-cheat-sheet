@@ -11,43 +11,47 @@ const LazyBrowserSupportCard = React.lazy(() =>
 );
 const LazyFixtureCard = React.lazy(() => import("../cards/FixtureCard"));
 const LazyClickActionCard = React.lazy(() =>
-  import("../cards/ClickActionCard")
+  import("../cards/actions/ClickActionCard")
 );
-const LazyDragActionCard = React.lazy(() => import("../cards/DragActionCard"));
+const LazyDragActionCard = React.lazy(() =>
+  import("../cards/actions/DragActionCard")
+);
 const LazyHoverActionCard = React.lazy(() =>
-  import("../cards/HoverActionCard")
+  import("../cards/actions/HoverActionCard")
 );
 const LazySelectActionCard = React.lazy(() =>
-  import("../cards/SelectActionCard")
+  import("../cards/actions/SelectActionCard")
 );
 const LazyTypeTextActionCard = React.lazy(() =>
-  import("../cards/TypeTextActionCard")
+  import("../cards/actions/TypeTextActionCard")
 );
 const LazyPressKeyActionCard = React.lazy(() =>
-  import("../cards/PressKeyActionCard")
+  import("../cards/actions/PressKeyActionCard")
 );
 const LazyNavigateActionCard = React.lazy(() =>
-  import("../cards/NavigateActionCard")
+  import("../cards/actions/NavigateActionCard")
 );
 const LazyResizeWindowActionCard = React.lazy(() =>
-  import("../cards/ResizeWindowActionCard")
+  import("../cards/actions/ResizeWindowActionCard")
 );
 const LazyDebugCard = React.lazy(() => import("../cards/DebugCard"));
 const LazyDeepEqualAssertCard = React.lazy(() =>
-  import("../cards/DeepEqualAssertCard")
+  import("../cards/asserts/DeepEqualAssertCard")
 );
 const LazyNotDeepEqualAssertCard = React.lazy(() =>
-  import("../cards/NotDeepEqualAssertCard")
+  import("../cards/asserts/NotDeepEqualAssertCard")
 );
 const LazyContainsAssertCard = React.lazy(() =>
-  import("../cards/ContainsAssertCard")
+  import("../cards/asserts/ContainsAssertCard")
 );
 const LazyNotContainsAssertCard = React.lazy(() =>
-  import("../cards/NotContainsAssertCard")
+  import("../cards/asserts/NotContainsAssertCard")
 );
-const LazyOkAssertCard = React.lazy(() => import("../cards/OkAssertCard"));
+const LazyOkAssertCard = React.lazy(() =>
+  import("../cards/asserts/OkAssertCard")
+);
 const LazyNotOkAssertCard = React.lazy(() =>
-  import("../cards/NotOkAssertCard")
+  import("../cards/asserts/NotOkAssertCard")
 );
 
 const mappings = [
