@@ -11,6 +11,7 @@ export { default as actions_typeText } from "./actions_typeText";
 export { default as actions_pressKey } from "./actions_pressKey";
 export { default as actions_navigate } from "./actions_navigate";
 export { default as actions_resizeWindow } from "./actions_resizeWindow";
+export { default as actions_takeScreenshot } from "./actions_takeScreenshot";
 export { default as fixture } from "./fixture";
 export { default as debug } from "./debug";
 export { default as assert_within } from "./assert_within";

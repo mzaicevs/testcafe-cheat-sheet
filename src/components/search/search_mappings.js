@@ -11,6 +11,8 @@ const LazyBrowserSupportCard = React.lazy(() =>
 );
 const LazyFixtureCard = React.lazy(() => import("../cards/FixtureCard"));
 const LazySkipTestCard = React.lazy(() => import("../cards/SkipTestCard"));
+const LazyDebugCard = React.lazy(() => import("../cards/DebugCard"));
+
 const LazyClickActionCard = React.lazy(() =>
   import("../cards/actions/ClickActionCard")
 );
@@ -35,7 +37,9 @@ const LazyNavigateActionCard = React.lazy(() =>
 const LazyResizeWindowActionCard = React.lazy(() =>
   import("../cards/actions/ResizeWindowActionCard")
 );
-const LazyDebugCard = React.lazy(() => import("../cards/DebugCard"));
+const LazyScreenshotActionCard = React.lazy(() =>
+  import("../cards/actions/ScreenshotActionCard")
+);
 
 const LazyDeepEqualAssertCard = React.lazy(() =>
   import("../cards/asserts/DeepEqualAssertCard")
@@ -153,6 +157,16 @@ const mappings = [
     )
   },
   {
+    keywords: ["debug"],
+    getComponent: () => (
+      <Loading
+        key={getId()}
+        component={<LazyDebugCard />}
+        spinnerAnimation="grow"
+      />
+    )
+  },
+  {
     keywords: ["click", " double click", " right click", "action"],
     getComponent: () => (
       <Loading
@@ -233,15 +247,16 @@ const mappings = [
     )
   },
   {
-    keywords: ["debug"],
+    keywords: ["screenshot", "snapshot", "action"],
     getComponent: () => (
       <Loading
         key={getId()}
-        component={<LazyDebugCard />}
+        component={<LazyScreenshotActionCard />}
         spinnerAnimation="grow"
       />
     )
   },
+
   {
     keywords: ["assert", "deep", "equal"],
     getComponent: () => (
