@@ -20,4 +20,4 @@ The app renders a few ancillary components but the main action is in `<CardConta
 
 `search_mappings.js` exports a simple array containing `React.lazy` loaded card components along with keyword matches.
 
-Each card component is an abstract of the cards purpose (e.g. click action card) that renders a base component (e.g. `<CodeCard>`).  The abstract card imports json data from the `snippets/` that relates to it's purpose (e.g. `import { action_click } from snippets`). Each code snippet file contains the raw data used in each card (such as code examples, titles, full doc links, etc).
+Each card component is a concrete card implementation of the cards purpose (e.g. click action card) that renders a base abstract component (e.g. `<CodeCard>`).  The concrete card imports json data from the `snippets/` that relates to it's purpose (e.g. `import { action_click } from snippets`). Each code snippet file contains the raw data used in each card (such as code examples, titles, full doc links, etc).
