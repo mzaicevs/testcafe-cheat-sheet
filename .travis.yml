@@ -16,3 +16,4 @@ deploy:
   on:
     branch: master
 after_script: # Upload coverage reports
+  - COVERALLS_REPO_TOKEN=$COVERALLS_REPO_TOKEN npm run coveralls
