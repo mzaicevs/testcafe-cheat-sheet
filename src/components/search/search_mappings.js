@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Loading from "../../base_components/Loading";
 
 const LazyInstallCard = React.lazy(() => import("../cards/InstallCard"));
@@ -35,6 +35,7 @@ const LazyResizeWindowActionCard = React.lazy(() =>
   import("../cards/actions/ResizeWindowActionCard")
 );
 const LazyDebugCard = React.lazy(() => import("../cards/DebugCard"));
+
 const LazyDeepEqualAssertCard = React.lazy(() =>
   import("../cards/asserts/DeepEqualAssertCard")
 );
@@ -53,13 +54,48 @@ const LazyOkAssertCard = React.lazy(() =>
 const LazyNotOkAssertCard = React.lazy(() =>
   import("../cards/asserts/NotOkAssertCard")
 );
+const LazyGreaterThanAssertCard = React.lazy(() =>
+  import("../cards/asserts/GreaterThanAssertCard")
+);
+const LazyGreaterThanEqualToAssertCard = React.lazy(() =>
+  import("../cards/asserts/GreaterThanEqualToAssertCard")
+);
+const LazyLessThanAssertCard = React.lazy(() =>
+  import("../cards/asserts/LessThanAssertCard")
+);
+const LazyLessThanEqualToAssertCard = React.lazy(() =>
+  import("../cards/asserts/LessThanEqualToAssertCard")
+);
+const LazyMatchesAssertCard = React.lazy(() =>
+  import("../cards/asserts/MatchesAssertCard")
+);
+const LazyNotMatchesAssertCard = React.lazy(() =>
+  import("../cards/asserts/NotMatchesAssertCard")
+);
+const LazyTypeOfAssertCard = React.lazy(() =>
+  import("../cards/asserts/TypeOfAssertCard")
+);
+const LazyNotTypeOfAssertCard = React.lazy(() =>
+  import("../cards/asserts/NotTypeOfAssertCard")
+);
+const LazyWithinAssertCard = React.lazy(() =>
+  import("../cards/asserts/WithinAssertCard")
+);
+const LazyNotWithinAssertCard = React.lazy(() =>
+  import("../cards/asserts/NotWithinAssertCard")
+);
+
+let id = 0;
+const getId = () => {
+  return ++id;
+};
 
 const mappings = [
   {
     keywords: ["install"],
     getComponent: () => (
       <Loading
-        key={1}
+        key={getId()}
         component={<LazyInstallCard />}
         spinnerAnimation="grow"
       />
@@ -69,7 +105,7 @@ const mappings = [
     keywords: ["running", "test"],
     getComponent: () => (
       <Loading
-        key={2}
+        key={getId()}
         component={<LazyRunningTestsCard />}
         spinnerAnimation="grow"
       />
@@ -79,7 +115,7 @@ const mappings = [
     keywords: ["example", "test", "simple"],
     getComponent: () => (
       <Loading
-        key={3}
+        key={getId()}
         component={<LazySimpleTestCard />}
         spinnerAnimation="grow"
       />
@@ -89,7 +125,7 @@ const mappings = [
     keywords: ["browser support"],
     getComponent: () => (
       <Loading
-        key={4}
+        key={getId()}
         component={<LazyBrowserSupportCard />}
         spinnerAnimation="grow"
       />
@@ -99,7 +135,7 @@ const mappings = [
     keywords: ["fixture"],
     getComponent: () => (
       <Loading
-        key={5}
+        key={getId()}
         component={<LazyFixtureCard />}
         spinnerAnimation="grow"
       />
@@ -109,7 +145,7 @@ const mappings = [
     keywords: ["click", " double click", " right click", "action"],
     getComponent: () => (
       <Loading
-        key={6}
+        key={getId()}
         component={<LazyClickActionCard />}
         spinnerAnimation="grow"
       />
@@ -119,7 +155,7 @@ const mappings = [
     keywords: ["drag", "action"],
     getComponent: () => (
       <Loading
-        key={7}
+        key={getId()}
         component={<LazyDragActionCard />}
         spinnerAnimation="grow"
       />
@@ -129,7 +165,7 @@ const mappings = [
     keywords: ["hover", "action"],
     getComponent: () => (
       <Loading
-        key={8}
+        key={getId()}
         component={<LazyHoverActionCard />}
         spinnerAnimation="grow"
       />
@@ -139,7 +175,7 @@ const mappings = [
     keywords: ["select", "action"],
     getComponent: () => (
       <Loading
-        key={9}
+        key={getId()}
         component={<LazySelectActionCard />}
         spinnerAnimation="grow"
       />
@@ -149,7 +185,7 @@ const mappings = [
     keywords: ["type", "typing", "text", "action"],
     getComponent: () => (
       <Loading
-        key={10}
+        key={getId()}
         component={<LazyTypeTextActionCard />}
         spinnerAnimation="grow"
       />
@@ -159,7 +195,7 @@ const mappings = [
     keywords: ["press", "key", "action"],
     getComponent: () => (
       <Loading
-        key={11}
+        key={getId()}
         component={<LazyPressKeyActionCard />}
         spinnerAnimation="grow"
       />
@@ -169,7 +205,7 @@ const mappings = [
     keywords: ["navigate", "navigation", "url", "go to", "action"],
     getComponent: () => (
       <Loading
-        key={12}
+        key={getId()}
         component={<LazyNavigateActionCard />}
         spinnerAnimation="grow"
       />
@@ -179,7 +215,7 @@ const mappings = [
     keywords: ["resize", "window", "action"],
     getComponent: () => (
       <Loading
-        key={13}
+        key={getId()}
         component={<LazyResizeWindowActionCard />}
         spinnerAnimation="grow"
       />
@@ -188,14 +224,18 @@ const mappings = [
   {
     keywords: ["debug"],
     getComponent: () => (
-      <Loading key={14} component={<LazyDebugCard />} spinnerAnimation="grow" />
+      <Loading
+        key={getId()}
+        component={<LazyDebugCard />}
+        spinnerAnimation="grow"
+      />
     )
   },
   {
     keywords: ["assert", "deep", "equal"],
     getComponent: () => (
       <Loading
-        key={15}
+        key={getId()}
         component={<LazyDeepEqualAssertCard />}
         spinnerAnimation="grow"
       />
@@ -205,7 +245,7 @@ const mappings = [
     keywords: ["assert", "not", "deep", "equal"],
     getComponent: () => (
       <Loading
-        key={16}
+        key={getId()}
         component={<LazyNotDeepEqualAssertCard />}
         spinnerAnimation="grow"
       />
@@ -215,7 +255,7 @@ const mappings = [
     keywords: ["assert", "contains"],
     getComponent: () => (
       <Loading
-        key={17}
+        key={getId()}
         component={<LazyContainsAssertCard />}
         spinnerAnimation="grow"
       />
@@ -225,7 +265,7 @@ const mappings = [
     keywords: ["assert", "not", "contains"],
     getComponent: () => (
       <Loading
-        key={18}
+        key={getId()}
         component={<LazyNotContainsAssertCard />}
         spinnerAnimation="grow"
       />
@@ -235,7 +275,7 @@ const mappings = [
     keywords: ["assert", "ok"],
     getComponent: () => (
       <Loading
-        key={19}
+        key={getId()}
         component={<LazyOkAssertCard />}
         spinnerAnimation="grow"
       />
@@ -245,8 +285,108 @@ const mappings = [
     keywords: ["assert", "not", "ok"],
     getComponent: () => (
       <Loading
-        key={20}
+        key={getId()}
         component={<LazyNotOkAssertCard />}
+        spinnerAnimation="grow"
+      />
+    )
+  },
+  {
+    keywords: ["assert", "greater", "than"],
+    getComponent: () => (
+      <Loading
+        key={getId()}
+        component={<LazyGreaterThanAssertCard />}
+        spinnerAnimation="grow"
+      />
+    )
+  },
+  {
+    keywords: ["assert", "greater", "than", "equal"],
+    getComponent: () => (
+      <Loading
+        key={getId()}
+        component={<LazyGreaterThanEqualToAssertCard />}
+        spinnerAnimation="grow"
+      />
+    )
+  },
+  {
+    keywords: ["assert", "less", "than"],
+    getComponent: () => (
+      <Loading
+        key={getId()}
+        component={<LazyLessThanAssertCard />}
+        spinnerAnimation="grow"
+      />
+    )
+  },
+  {
+    keywords: ["assert", "less", "than", "equal"],
+    getComponent: () => (
+      <Loading
+        key={getId()}
+        component={<LazyLessThanEqualToAssertCard />}
+        spinnerAnimation="grow"
+      />
+    )
+  },
+  {
+    keywords: ["assert", "matches"],
+    getComponent: () => (
+      <Loading
+        key={getId()}
+        component={<LazyMatchesAssertCard />}
+        spinnerAnimation="grow"
+      />
+    )
+  },
+  {
+    keywords: ["assert", "not", "matches"],
+    getComponent: () => (
+      <Loading
+        key={getId()}
+        component={<LazyNotMatchesAssertCard />}
+        spinnerAnimation="grow"
+      />
+    )
+  },
+  {
+    keywords: ["assert", "type of"],
+    getComponent: () => (
+      <Loading
+        key={getId()}
+        component={<LazyTypeOfAssertCard />}
+        spinnerAnimation="grow"
+      />
+    )
+  },
+  {
+    keywords: ["assert", "not", "type of"],
+    getComponent: () => (
+      <Loading
+        key={getId()}
+        component={<LazyNotTypeOfAssertCard />}
+        spinnerAnimation="grow"
+      />
+    )
+  },
+  {
+    keywords: ["assert", "within"],
+    getComponent: () => (
+      <Loading
+        key={getId()}
+        component={<LazyWithinAssertCard />}
+        spinnerAnimation="grow"
+      />
+    )
+  },
+  {
+    keywords: ["assert", "not", "within"],
+    getComponent: () => (
+      <Loading
+        key={getId()}
+        component={<LazyNotWithinAssertCard />}
         spinnerAnimation="grow"
       />
     )

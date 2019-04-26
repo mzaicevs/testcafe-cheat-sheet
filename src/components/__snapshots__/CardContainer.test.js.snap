@@ -103,6 +103,56 @@ exports[`CardContainer matches snapshot 1`] = `
       key="20"
       spinnerAnimation="grow"
     />
+    <Loading
+      component={<UNDEFINED />}
+      key="21"
+      spinnerAnimation="grow"
+    />
+    <Loading
+      component={<UNDEFINED />}
+      key="22"
+      spinnerAnimation="grow"
+    />
+    <Loading
+      component={<UNDEFINED />}
+      key="23"
+      spinnerAnimation="grow"
+    />
+    <Loading
+      component={<UNDEFINED />}
+      key="24"
+      spinnerAnimation="grow"
+    />
+    <Loading
+      component={<UNDEFINED />}
+      key="25"
+      spinnerAnimation="grow"
+    />
+    <Loading
+      component={<UNDEFINED />}
+      key="26"
+      spinnerAnimation="grow"
+    />
+    <Loading
+      component={<UNDEFINED />}
+      key="27"
+      spinnerAnimation="grow"
+    />
+    <Loading
+      component={<UNDEFINED />}
+      key="28"
+      spinnerAnimation="grow"
+    />
+    <Loading
+      component={<UNDEFINED />}
+      key="29"
+      spinnerAnimation="grow"
+    />
+    <Loading
+      component={<UNDEFINED />}
+      key="30"
+      spinnerAnimation="grow"
+    />
   </CardColumns>
   <Bootstrap(undefined)
     bg="light"
