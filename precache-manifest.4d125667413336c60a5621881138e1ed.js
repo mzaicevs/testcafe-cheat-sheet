@@ -8,12 +8,12 @@ self.__precacheManifest = [
     "url": "/testcafe-cheat-sheet/static/js/1.1fab91a5.chunk.js"
   },
   {
-    "revision": "c7860fe6a145a7ef944f",
+    "revision": "237d3d1a0234ab3fe083",
     "url": "/testcafe-cheat-sheet/static/css/main.687bb0e8.chunk.css"
   },
   {
-    "revision": "c7860fe6a145a7ef944f",
-    "url": "/testcafe-cheat-sheet/static/js/main.52893170.chunk.js"
+    "revision": "237d3d1a0234ab3fe083",
+    "url": "/testcafe-cheat-sheet/static/js/main.0eda3dd8.chunk.js"
   },
   {
     "revision": "cc218856e7c1409e013d",
@@ -164,7 +164,7 @@ self.__precacheManifest = [
     "url": "/testcafe-cheat-sheet/static/js/39.5fcd4e16.chunk.js"
   },
   {
-    "revision": "8f9ba711a5aa76418a07f7fa129ae06e",
+    "revision": "8475f8c3dacc2f64d85c383c5c8f1ebf",
     "url": "/testcafe-cheat-sheet/index.html"
   }
 ];
