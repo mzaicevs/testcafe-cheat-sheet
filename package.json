@@ -2,6 +2,7 @@
   "name": "testcafe-cheat-sheet",
   "version": "0.1.0",
   "homepage": "https://byrne-greg.github.io/testcafe-cheat-sheet/",
+  "author": "Greg Byrne",
   "private": true,
   "dependencies": {
     "bootstrap": "^4.3.1",
