@@ -1,6 +1,7 @@
 export { default as install } from "./install";
 export { default as simpleTest } from "./simpleTest";
 export { default as runningTest } from "./runningTest";
+export { default as skippingTests } from "./skippingTests";
 export { default as browserSupport } from "./browserSupport";
 export { default as actions_click } from "./actions_click";
 export { default as actions_drag } from "./actions_drag";

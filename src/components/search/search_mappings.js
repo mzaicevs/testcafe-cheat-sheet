@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Loading from "../../base_components/Loading";
 
 const LazyInstallCard = React.lazy(() => import("../cards/InstallCard"));
@@ -10,6 +10,7 @@ const LazyBrowserSupportCard = React.lazy(() =>
   import("../cards/BrowserSupportCard")
 );
 const LazyFixtureCard = React.lazy(() => import("../cards/FixtureCard"));
+const LazySkipTestCard = React.lazy(() => import("../cards/SkipTestCard"));
 const LazyClickActionCard = React.lazy(() =>
   import("../cards/actions/ClickActionCard")
 );
@@ -137,6 +138,16 @@ const mappings = [
       <Loading
         key={getId()}
         component={<LazyFixtureCard />}
+        spinnerAnimation="grow"
+      />
+    )
+  },
+  {
+    keywords: ["skipping", "only", "test"],
+    getComponent: () => (
+      <Loading
+        key={getId()}
+        component={<LazySkipTestCard />}
         spinnerAnimation="grow"
       />
     )

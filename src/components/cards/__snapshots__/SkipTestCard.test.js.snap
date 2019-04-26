@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SkipTestCard matches snapshot 1`] = `
+<CodeCard
+  cardTitle="Skipping Tests"
+  codeSections={
+    Array [
+      Object {
+        "code": Array [
+          "fixture.skip",
+          "test.skip",
+        ],
+        "description": "Specify that a particular test or fixture should be skipped when running tests.",
+        "language": "javascript",
+      },
+      Object {
+        "code": Array [
+          "fixture.only",
+          "test.only",
+        ],
+        "description": "Specify that only a particular test or fixture should run while all others should be skipped.",
+        "language": "javascript",
+      },
+    ]
+  }
+  fullDocLink="https://devexpress.github.io/testcafe/documentation/test-api/test-code-structure.html#skipping-tests"
+/>
+`;
