@@ -58,7 +58,7 @@ const WhyWasThisCreatedCardContent = () => (
               withPreceedingSpace
             />
             ; I found an excuse to actually read the TestCafe docs more
-            in-depth, experiment more with component libraries, and chase
+            in-depth, experiment more with component libraries, and learn about
             Lighthouse approval metrics. As it's mostly static information, I
             felt like it was low-hanging fruit I could pump out fairly quickly
             while learn and experiment that little bit more.
